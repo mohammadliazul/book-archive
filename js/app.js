@@ -1,3 +1,12 @@
+const searchBtn = document.getElementById("button-search");
+const searchInput = document.getElementById("search-field");
+searchInput.addEventListener("keydown", function (event) {
+    if (event.key === 'Enter') {
+        searchBtn.click();
+    }
+});
+
+
 const searchBook = () => {
     const errorMessageDiv = document.getElementById("error-message");
     const searchField = document.getElementById('search-field');
